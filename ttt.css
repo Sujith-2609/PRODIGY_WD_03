@@ -1,0 +1,86 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-top: 20px;
+    font-size: 2em;
+    color: #333;
+}
+
+/* Game Mode Selection */
+label {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#gameMode {
+    font-size: 1em;
+    padding: 5px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+/* Tic-Tac-Toe Board */
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin: 20px auto;
+    width: fit-content;
+    background-color: #000;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+/* Individual Cells */
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+/* Cell Hover Effect */
+.cell:hover {
+    background-color: #ddd;
+}
+
+/* Status Text */
+.status {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #333;
+}
+
+/* Restart Button */
+.reset {
+    margin-top: 20px;
+    font-size: 1em;
+    padding: 10px 20px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.reset:hover {
+    background-color: #218838;
+}
